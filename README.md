@@ -6,10 +6,11 @@ Simple Elixir SSH worker that provides an Elixir shell over SSH into your applic
 
 ## Installation
 
-Add it to your `mix.exs` file like this:
+Add it to your `mix.exs` file like either one of this:
 ```
 defp deps do
-  [{:ex_sshd, github: "tverlaan/ex_sshd"}]
+  [{:ex_sshd, github: "tverlaan/ex_sshd"},
+  {:ex_sshd, "~> 0.0.1"}]
 end
 ```
 

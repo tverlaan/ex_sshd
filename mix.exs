@@ -7,6 +7,8 @@ defmodule ExSshd.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -31,5 +33,20 @@ defmodule ExSshd.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     []
+  end
+
+  defp description do
+    """
+    Simple Elixir SSH worker that provides an Elixir shell over SSH into your application.
+    """
+  end
+
+  defp package do
+    [# These are the default files included in the package
+      files: ["lib", "mix.exs", "README.md", "LICENSE.md", "make_host_key", "make_keys"],
+      maintainers: ["Timmo Verlaan"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/tverlaan/ex_sshd"}
+    ]
   end
 end
