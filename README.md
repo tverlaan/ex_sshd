@@ -1,6 +1,6 @@
 # ExSshd
 
-Simple Elixir SSH worker that provides an Elixir shell over SSH into your application. This is an Elixir port of [erl_sshd][https://github.com/ivanos/erl_sshd] but runs an elixir shell instead of an erlang shell.
+Simple Elixir SSH worker that provides an Elixir shell over SSH into your application. This is an Elixir port of [erl_sshd](https://github.com/ivanos/erl_sshd) but runs an elixir shell instead of an erlang shell.
 
 *Please note:* exit only works client side (`~.`) or making the process crash (`h`) (it won't crash the application and the SSH daemon will restart itself)
 
