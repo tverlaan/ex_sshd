@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# make host key first
+CWD=$(dirname "$0")
+$CWD/make_host_key
+
+# make user keys
+rm -f "$PRIVDIR/authorized_keys" id_rsa id_rsa.pub
+ssh-keygen -t rsa -P "" -f id_rsa
+chmod 600 id_rsa
+
+# use the user's public key as the first authorized key
+cp id_rsa.pub "$PRIVDIR/authorized_keys"

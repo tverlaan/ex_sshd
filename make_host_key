@@ -1,0 +1,10 @@
+#!/bin/sh
+
+PRIVDIR="priv/ex_sshd"
+
+# Make the private dir
+mkdir -p "$PRIVDIR"
+
+# make host keys
+rm -f "$PRIVDIR/ssh_host_rsa_key*"
+ssh-keygen -t rsa -P "" -f "$PRIVDIR/ssh_host_rsa_key"
