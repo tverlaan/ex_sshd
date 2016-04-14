@@ -1,5 +1,7 @@
 #!/bin/sh
 
+PRIVDIR="priv/ex_sshd"
+
 # make host key first
 CWD=$(dirname "$0")
 $CWD/make_host_key
