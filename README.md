@@ -13,7 +13,7 @@ Add it to your `mix.exs` file like either one of this:
 ```
 defp deps do
   [{:ex_sshd, github: "tverlaan/ex_sshd"},
-  {:ex_sshd, "~> 0.0.1"}]
+  {:ex_sshd, "~> 0.0.2"}]
 end
 ```
 
