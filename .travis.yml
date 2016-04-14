@@ -1,0 +1,4 @@
+sudo: false
+language: elixir
+elixir:
+  - 1.2.3
