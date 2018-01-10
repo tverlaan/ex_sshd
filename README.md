@@ -1,7 +1,7 @@
 # ExSshd
 
 [![Build Status](https://travis-ci.org/tverlaan/ex_sshd.svg?branch=master)](https://travis-ci.org/tverlaan/ex_sshd)
-[![Hex.pm Version](http://img.shields.io/hexpm/v/ex_sshd.svg?style=flat)](https://hex.pm/packages/ex_sshd)
+[![Hex.pm Version](https://img.shields.io/hexpm/v/ex_sshd.svg?style=flat)](https://hex.pm/packages/ex_sshd)
 
 Simple Elixir SSH worker that provides an Elixir shell over SSH into your application. This is an Elixir port of [erl_sshd](https://github.com/ivanos/erl_sshd) but runs an elixir shell instead of an erlang shell.
 
