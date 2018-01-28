@@ -48,11 +48,11 @@ config :ex_sshd,
 
 ## TODO
 
-- To support `h` (IEx helper function) we need ansi support in the SSH channel, right now you could use the following configuration to make it work:
+- ~To support `h` (IEx helper function) we need ansi support in the SSH channel, right now you could use the following configuration to make it work:~
 
 ```
 config :elixir,
-  ansi_enabled: false
+  ansi_enabled: true  # use to be false
 ```
 
 - Proper way to exit from the server side. Right now only `~.` from the client is supported to exit.

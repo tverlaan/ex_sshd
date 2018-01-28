@@ -3,4 +3,4 @@
 use Mix.Config
 
 config :elixir,
-  ansi_enabled: false
+  ansi_enabled: true
