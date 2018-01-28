@@ -2,6 +2,8 @@ sudo: false
 language: elixir
 elixir:
   - 1.2.3
+  - 1.5.3
+  - 1.6.0
 
 before_script:
   - ./make_keys
