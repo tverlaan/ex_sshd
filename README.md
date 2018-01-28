@@ -52,7 +52,7 @@ config :ex_sshd,
 
 ```
 config :elixir,
-  ansi_enabled: true  # use to be false
+  ansi_enabled: true  # used to be false
 ```
 
 - Proper way to exit from the server side. Right now only `~.` from the client is supported to exit.

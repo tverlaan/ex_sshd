@@ -23,11 +23,11 @@ defmodule ExSshd do
     # set the priv dir containing the keys
     app_dir     = Application.app_dir master_app
     priv_dir    = Path.join([app_dir, "priv", "ex_sshd"])
-                  |> String.to_char_list
+                  |> String.to_charlist()
 
     # transform credentials from strings to char lists
     credentials = Application.get_env(:ex_sshd, :credentials, [])
-                  |> Enum.map(fn({u,p}) -> {String.to_char_list(u), String.to_char_list(p)} end)
+                  |> Enum.map(fn({u,p}) -> {String.to_charlist(u), String.to_charlist(p)} end)
 
     GenServer.cast self(), :start
 
